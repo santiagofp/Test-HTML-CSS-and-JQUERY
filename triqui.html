@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+<head> 
+
+    <!--
+
+Jener Santiago Florez Perez
+
+-->
+    <title>Triqui page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="prueba.css">.
+    <script>
+
+        $(document).ready(function () {
+            var i;
+            var a11=0,a12=0,a13=0,a21=0,a22=0,a23=0,a31=0,a32=0,a33=0;
+            
+
+         
+                function myFunction(){
+                    
+                    
+                    if((a11==2 && a22==2 && a33==2) || (a11==1 && a22==1 && a33==1))
+                    {
+                    if(a11==2){alert("EL GANADOR ES X");} else {alert("EL GANADOR ES O");}  
+                
+              
+                $("#test33").css("border-width","10px");
+                $("#test22").css("border-width","10px");
+                $("#test11").css("border-width","10px");
+                disable();                          
+                    };
+                    if((a31==2 && a22==2 && a13==2) || (a31==1 && a22==1 && a13==1))
+                    {
+                    if(a31==2){alert("EL GANADOR ES X");} else {alert("EL GANADOR ES O");}  
+                
+              
+                $("#test31").css("border-width","10px");
+                $("#test22").css("border-width","10px");
+                $("#test13").css("border-width","10px");
+                disable();                          
+                    };
+
+                    if((a11==2 && a12==2 && a13==2) || (a11==1 && a12==1 && a13==1))
+                    {
+                    if(a11==2){alert("EL GANADOR ES X");} else {alert("EL GANADOR ES O");}  
+                
+              
+                $("#test11").css("border-width","10px");
+                $("#test12").css("border-width","10px");
+                $("#test13").css("border-width","10px");
+                disable();                          
+                    };
+                    if((a21==2 && a22==2 && a23==2) || (a21==1 && a22==1 && a23==1))
+                    {
+                    if(a21==2){alert("EL GANADOR ES X");} else {alert("EL GANADOR ES O");}  
+                
+              
+                $("#test21").css("border-width","10px");
+                $("#test22").css("border-width","10px");
+                $("#test23").css("border-width","10px");
+                disable();                          
+                    };
+                    if((a31==2 && a32==2 && a33==2) || (a31==1 && a32==1 && a33==1))
+                    {
+                    if(a31==2){alert("EL GANADOR ES X");} else {alert("EL GANADOR ES O");}  
+                
+              
+                $("#test31").css("border-width","10px");
+                $("#test32").css("border-width","10px");
+                $("#test33").css("border-width","10px");
+                disable();                          
+                    };
+                    if((a11==2 && a21==2 && a31==2) || (a11==1 && a21==1 && a31==1))
+                    {
+                    if(a31==2){alert("EL GANADOR ES X");} else {alert("EL GANADOR ES O");}  
+                
+              
+                $("#test11").css("border-width","10px");
+                $("#test21").css("border-width","10px");
+                $("#test31").css("border-width","10px");
+                disable();                          
+                    };
+                    if((a12==2 && a22==2 && a32==2) || (a12==1 && a22==1 && a32==1))
+                    {
+                    if(a32==2){alert("EL GANADOR ES X");} else {alert("EL GANADOR ES O");}  
+                
+              
+                $("#test12").css("border-width","10px");
+                $("#test22").css("border-width","10px");
+                $("#test32").css("border-width","10px");
+                disable();                          
+                    };
+                    if((a13==2 && a23==2 && a33==2) || (a13==1 && a23==1 && a33==1))
+                    {
+                    if(a33==2){alert("EL GANADOR ES X");} else {alert("EL GANADOR ES O");}  
+                
+              
+                $("#test13").css("border-width","10px");
+                $("#test23").css("border-width","10px");
+                $("#test33").css("border-width","10px");
+                disable();                          
+                    };
+
+
+
+
+
+
+
+
+
+
+
+                }
+
+                $("#reset").click(function(){
+                    $(test11).prop('disabled',false);
+                    $(test12).prop('disabled',false);
+                    $(test13).prop('disabled',false);
+                    $(test21).prop('disabled',false);
+                    $(test22).prop('disabled',false);
+                    $(test23).prop('disabled',false);
+                    $(test31).prop('disabled',false);
+                    $(test32).prop('disabled',false);
+                    $(test33).prop('disabled',false);
+                    $('#test11').css('background-image','none'); 
+                    $('#test12').css('background-image','none') ;
+                    $('#test13').css('background-image','none') ;
+                    $('#test21').css('background-image','none') ;
+                    $('#test22').css('background-image','none') ;
+                    $('#test23').css('background-image','none') ;
+                    $('#test31').css('background-image','none') ;
+                    $('#test32').css('background-image','none') ;
+                    $('#test33').css('background-image','none');
+                    a11=0,a12=0,a13=0,a21=0,a22=0,a23=0,a31=0,a32=0,a33=0;
+                    $("#test33").css("border-width","3px");
+                    $("#test22").css("border-width","3px");
+                    $("#test11").css("border-width","3px");
+                    $("#test12").css("border-width","3px");
+                    $("#test13").css("border-width","3px");
+                    $("#test21").css("border-width","3px");
+                    $("#test23").css("border-width","3px");
+                    $("#test31").css("border-width","3px");
+                    $("#test32").css("border-width","3px");
+
+                });
+
+
+
+
+
+
+
+                function disable(){
+                    $(test11).prop('disabled','true');
+                    $(test12).prop('disabled','true');
+                    $(test13).prop('disabled','true');
+                    $(test21).prop('disabled','true');
+                    $(test22).prop('disabled','true');
+                    $(test23).prop('disabled','true');
+                    $(test31).prop('disabled','true');
+                    $(test32).prop('disabled','true');
+                    $(test33).prop('disabled','true');
+                }
+
+
+             
+
+            $("#test11").click(function(){
+                if($('#test11').css('background-image') == 'none'){
+                if(i==true){
+                
+                $("#test11").css("background-image","url(o.png)");
+                i=false;
+                a11=1;
+                }
+                else{
+
+                $("#test11").css("background-image","url(x.png)");
+                i=true;
+                a11=2;
+            }}
+            myFunction();
+            })
+                
+            $("#test12").click(function(){
+                if($('#test12').css('background-image') == 'none'){
+                if(i==true){
+                
+                $("#test12").css("background-image","url(o.png)");
+                i=false;
+                a12=1;
+                }
+                else{
+
+                $("#test12").css("background-image","url(x.png)");
+                i=true;
+                a12=2;
+            }}
+            myFunction();
+            })
+            $("#test13").click(function(){
+                if($('#test13').css('background-image') == 'none'){
+                if(i==true){
+                
+                $("#test13").css("background-image","url(o.png)");
+                i=false;
+                a13=1;
+                }
+                else{
+
+                $("#test13").css("background-image","url(x.png)");
+                i=true;
+                a13=2;
+            }}
+            myFunction();
+            })
+            $("#test21").click(function(){
+                if($('#test21').css('background-image') == 'none'){
+                if(i==true){
+                
+                $("#test21").css("background-image","url(o.png)");
+                i=false;
+                a21=1;
+                }
+                else{
+
+                $("#test21").css("background-image","url(x.png)");
+                i=true;
+                a21=2;
+            }}
+            myFunction();
+            })
+                
+            $("#test22").click(function(){
+                if($('#test22').css('background-image') == 'none'){
+                if(i==true){
+                
+                $("#test22").css("background-image","url(o.png)");
+                i=false;
+                a22=1;
+                }
+                else{
+
+                $("#test22").css("background-image","url(x.png)");
+                i=true;
+                a22=2;
+            }}
+            myFunction();
+            })
+            $("#test23").click(function(){
+                if($('#test23').css('background-image') == 'none'){
+                if(i==true){
+                
+                $("#test23").css("background-image","url(o.png)");
+                i=false;
+                a23=1;
+                }
+                else{
+
+                $("#test23").css("background-image","url(x.png)");
+                i=true;
+                a23=2;
+            }}
+            myFunction();
+            })
+            $("#test31").click(function(){
+                if($('#test31').css('background-image') == 'none'){
+                if(i==true){
+                
+                $("#test31").css("background-image","url(o.png)");
+                i=false;
+                a31=1;
+                }
+                else{
+
+                $("#test31").css("background-image","url(x.png)");
+                i=true;
+                a31=2;
+            }}
+            myFunction();
+            })
+                
+            $("#test32").click(function(){
+                if($('#test32').css('background-image') == 'none'){
+                if(i==true){
+                
+                $("#test32").css("background-image","url(o.png)");
+                i=false;
+                a32=1;
+                }
+                else{
+
+                $("#test32").css("background-image","url(x.png)");
+                i=true;
+                a32=2;
+            }}
+            myFunction();
+            })
+
+            $("#test33").click(function(){
+                if($('#test33').css('background-image') == 'none'){
+                if(i==true){
+                
+                $("#test33").css("background-image","url(o.png)");
+                i=false;
+                a33=1;
+                }
+                else{
+
+                $("#test33").css("background-image","url(x.png)");
+                i=true;
+                a33=2;
+                              
+               }
+            }
+            myFunction();
+            })
+            
+            
+                
+               
+                  
+                
+               
+
+
+            
+         });
+            
+        
+    </script>
+</head>
+<body>
+
+    <table class="egt" id="egt">
+
+        <tr>
+
+            <td>
+                <button type="button" id="test11" class="test"></button>
+            </td>
+
+            <td> 
+                <button value=" " id="test12" class="test" ></button>
+            </td>
+
+            <td>
+                <button value=" " id="test13" class="test"></button>
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <td>
+                <button value=" " id="test21" class="test"></button>
+            </td>
+
+            <td>
+                <button value=" " id="test22" class="test"></button>
+            </td>
+
+            <td>
+                <button value=" " id="test23" class="test"></button>
+            </td>
+
+        </tr>
+        <tr>
+
+            <td>
+                <button value=" " id="test31" class="test"></button>
+            </td>
+
+            <td>
+                <button value=" " id="test32" class="test"></button>
+            </td>
+
+            <td>
+                <button value=" " id="test33" class="test"></button>
+            </td>
+
+        </tr>
+    </table>
+    
+    <button value="reset" id="reset" class="reset"></button>
+
+</body>
+</html>
+
